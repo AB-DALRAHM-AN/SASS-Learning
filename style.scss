@@ -6,6 +6,8 @@
 @use "./sass/variables/colors" as *;
 // import media queries
 @use "./sass/variables/media" as *;
+// import mixins
+@use "./sass/helpers/mixins" as *;
 
 // Global Variable
 $alt_color: green;
@@ -227,3 +229,47 @@ $direction: "right";
     }
   }
 }
+
+// interpolation
+$company: "facebook";
+$position: "top";
+
+// unique-id function to generate random id
+.ad-#{$company}-#{unique-id()} {
+  background-image: url("images/#{$company}.png");
+  #{$position}: 0;
+}
+
+.ad-#{unique-id()} {
+  background-image: url("images/#{$company}.png");
+  #{$position}: 0;
+}
+
+// Comments
+
+// This is a comment not appear in css
+
+/* This is a comment appear in css but not in compressed mode*/
+
+/*! this is a comment appear in css and in compressed mode */
+
+/* this comment contain interpplation => #{$company} */
+
+/// this comment not appear in css and not in compressed mode this is a documintation comment.
+
+// mixins
+ul.links {
+  @include list-reset;
+}
+
+// mixins with arguments that i can pass it
+// it's like a function
+.box {
+  @include box(100px, 100px, red);
+}
+.box {
+  @include centering;
+  @include box(100px, 100px, red);
+}
+
+// loop => for

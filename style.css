@@ -159,4 +159,38 @@
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   border-left-color: #444;
+}
+
+.ad-facebook-u863c37 {
+  background-image: url("images/facebook.png");
+  top: 0;
+}
+
+.ad-u863c3a {
+  background-image: url("images/facebook.png");
+  top: 0;
+}
+
+/* This is a comment appear in css but not in compressed mode*/
+/*! this is a comment appear in css and in compressed mode */
+/* this comment contain interpplation => facebook */
+ul.links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

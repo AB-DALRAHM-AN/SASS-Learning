@@ -1,0 +1,15 @@
+@mixin box($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@mixin box ($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
