@@ -114,3 +114,38 @@ $alt_color: green;
   }
 }
 
+// Property Declarations And Placeholder
+
+.box {
+  font-size: 20px;
+  font: {
+    size: 15px;
+    weight: bold;
+  }
+  padding: 10px;
+  margin: auto {
+    top: 10px;
+    bottom: 15px;
+  }
+}
+
+// % to make group of rules and thier is no thing called main-box
+%main-box {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.ads {
+  @extend %main-box;
+  font-size: 20px;
+  color: red;
+}
+
+.article {
+  font-size: 22px;
+  @extend %main-box;
+  color: green;
+}
+
+
