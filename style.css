@@ -105,4 +105,58 @@
   .sidebar {
     padding: 40px;
   }
+}
+.box {
+  font-size: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.arrow-div, .box, .article, .ads {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.ads {
+  font-size: 20px;
+  color: red;
+}
+
+.article {
+  font-size: 22px;
+  color: green;
+}
+
+.page {
+  background-color: #444;
+  color: white;
+}
+
+.arrow-div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 20px auto;
+}
+.arrow-div::before {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-left-color: #444;
 }/*# sourceMappingURL=style.css.map */
