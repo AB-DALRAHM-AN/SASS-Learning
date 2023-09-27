@@ -1,0 +1,31 @@
+// import global rules
+@use "./sass/layouts/golbal-rules";
+// import contact page
+@use "./sass/pages/_contact";
+// Import Variables
+@use "./sass/variables/colors" as *;
+// import media queries
+@use "./sass/variables/media" as *;
+
+// Global Variable
+$alt_color: green;
+
+.header {
+  color: $alt_color;
+}
+.footer {
+  $alt_color: black !global;
+  background-color: $alt_color;
+}
+.copyright {
+  background-color: $alt_color;
+}
+.sidebar {
+  background-color: $main;
+  color: $alt;
+}
+@media ($max_mobile) {
+  .sidebar {
+    padding: 40px;
+  }
+}
