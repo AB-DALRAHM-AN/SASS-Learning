@@ -161,12 +161,12 @@
   border-left-color: #444;
 }
 
-.ad-facebook-uoi68sg {
+.ad-facebook-uoi6axr {
   background-image: url("images/facebook.png");
   top: 0;
 }
 
-.ad-uoi68t6 {
+.ad-uoi6axz {
   background-image: url("images/facebook.png");
   top: 0;
 }
@@ -249,4 +249,82 @@ ul.links {
   height: 500;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.red {
+  color: white;
+  background-color: red;
+}
+.red::before {
+  content: "red";
+}
+
+.green {
+  color: white;
+  background-color: green;
+}
+.green::before {
+  content: "green";
+}
+
+.blue {
+  color: white;
+  background-color: blue;
+}
+.blue::before {
+  content: "blue";
+}
+
+.yellow {
+  color: white;
+  background-color: yellow;
+}
+.yellow::before {
+  content: "yellow";
+}
+
+.black {
+  color: white;
+  background-color: black;
+}
+.black::before {
+  content: "black";
+}
+
+.white {
+  color: white;
+  background-color: white;
+}
+.white::before {
+  content: "white";
+}
+
+.one {
+  font-size: 20px;
+  color: white;
+  background-color: red;
+  padding: 10px;
+}
+.one::before {
+  content: "one";
+}
+
+.two {
+  font-size: 10px;
+  color: white;
+  background-color: green;
+  padding: 5px;
+}
+.two::before {
+  content: "two";
+}
+
+.three {
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  padding: 15px;
+}
+.three::before {
+  content: "three";
 }/*# sourceMappingURL=style.css.map */

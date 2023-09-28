@@ -296,3 +296,40 @@ $dimentions: 0;
   $dimentions: $dimentions + 100;
 }
 
+// each + maps
+
+$colors: (
+  "red": red,
+  "green": green,
+  "blue": blue,
+  "yellow": yellow,
+  "black": black,
+  "white": white,
+);
+
+@each $name, $color in $colors {
+  .#{$name} {
+    color: white;
+    background-color: $color;
+    &::before {
+      content: $name;
+    }
+  }
+}
+
+$clases: "one" 20px red, "two" 10px green, "three" 30px blue;
+
+@each $name, $size, $color in $clases {
+  .#{$name} {
+    font-size: $size;
+    color: white;
+    background-color: $color;
+    padding: $size / 2;
+    &::before {
+      content: $name;
+    }
+  }
+}
+
+// while loop
+
