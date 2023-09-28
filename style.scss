@@ -333,3 +333,15 @@ $clases: "one" 20px red, "two" 10px green, "three" 30px blue;
 
 // while loop
 
+$start: 1;
+
+@while $start <= 5 {
+  .class-#{$start} {
+    width: 100px * $start;
+    height: (100px * $start) / 2;
+  }
+  $start: $start + 1;
+}
+
+
+
