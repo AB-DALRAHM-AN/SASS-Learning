@@ -377,3 +377,32 @@ $grid-columns: 12;
     opacity: 1;
   }
 }
+
+// media queries
+
+@include media(mobile) {
+  .sidebar {
+    padding: 40px;
+    font-size: 20px;
+  }
+}
+@include media(tablet) {
+  .sidebar {
+    padding: 30px;
+    font-size: 30px;
+  }
+}
+@include media(desktop) {
+  .sidebar {
+    padding: 60px;
+    font-size: 25px;
+  }
+}
+@include media(large) {
+  .sidebar {
+    padding: 80px;
+    font-size: 40px;
+  }
+}
+
+

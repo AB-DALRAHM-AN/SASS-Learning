@@ -161,12 +161,12 @@
   border-left-color: #444;
 }
 
-.ad-facebook-utd5gpt {
+.ad-facebook-utd5hwr {
   background-image: url("images/facebook.png");
   top: 0;
 }
 
-.ad-utd5gq1 {
+.ad-utd5hxj {
   background-image: url("images/facebook.png");
   top: 0;
 }
@@ -426,5 +426,29 @@ ul.links {
   }
   to {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sidebar {
+    padding: 40px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    padding: 30px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .sidebar {
+    padding: 60px;
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    padding: 80px;
+    font-size: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -36,3 +36,23 @@
     @content;
   }
 }
+
+@mixin media($media) {
+  @if $media == mobile {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $media == large {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
