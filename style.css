@@ -161,12 +161,12 @@
   border-left-color: #444;
 }
 
-.ad-facebook-up8niwp {
+.ad-facebook-utd5gmu {
   background-image: url("images/facebook.png");
   top: 0;
 }
 
-.ad-up8nix9 {
+.ad-utd5gnm {
   background-image: url("images/facebook.png");
   top: 0;
 }
@@ -408,4 +408,23 @@ ul.links {
 
 .box-2 {
   height: 600px;
+}
+
+.box-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

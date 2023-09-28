@@ -20,3 +20,19 @@
   align-items: center;
   gap: 10px;
 }
+
+@mixin overlay($color, $opacity) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color, $opacity);
+}
+
+@mixin keyF($anim-name) {
+  @keyframes #{$anim-name} {
+    @content;
+  }
+}

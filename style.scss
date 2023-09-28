@@ -11,7 +11,6 @@
 // import functions
 @use "./sass/helpers/functions" as *;
 
-
 // Global Variable
 $alt_color: green;
 
@@ -288,7 +287,7 @@ ul.links {
 $dimentions: 0;
 @for $i from 1 through 5 {
   .circle-#{$i + $dimentions} {
-    width:  $dimentions + 100;
+    width: $dimentions + 100;
     height: $dimentions + 100;
     border-radius: 50%;
     background-color: rgb(0, 0, 0, 0.1 * $i);
@@ -365,4 +364,16 @@ $grid-columns: 12;
 
 // mixin with content
 
+.box-3 {
+  @include overlay(red, 0.5);
+}
 
+// MIXINS WITH keyframes
+@include keyF(fade-in) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
