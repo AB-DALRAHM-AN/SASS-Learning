@@ -13,3 +13,10 @@
   height: $height;
   background-color: $color;
 }
+
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

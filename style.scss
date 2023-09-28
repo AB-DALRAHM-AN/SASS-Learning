@@ -8,8 +8,8 @@
 @use "./sass/variables/media" as *;
 // import mixins
 @use "./sass/helpers/mixins" as *;
-// import centering
-@use "./sass/helpers/centering" as *;
+// import functions
+@use "./sass/helpers/functions" as *;
 
 
 // Global Variable
@@ -352,5 +352,17 @@ $grid-columns: 12;
     width: percentage($i / $grid-columns);
   }
 }
+
+// functions
+
+.box {
+  width: half(100px);
+}
+
+.box-2 {
+  height: calcHight(100px, 200px, 300px);
+}
+
+// mixin with content
 
 

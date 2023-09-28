@@ -161,12 +161,12 @@
   border-left-color: #444;
 }
 
-.ad-facebook-up8nhx7 {
+.ad-facebook-up8niwp {
   background-image: url("images/facebook.png");
   top: 0;
 }
 
-.ad-up8nhxl {
+.ad-up8nix9 {
   background-image: url("images/facebook.png");
   top: 0;
 }
@@ -400,4 +400,12 @@ ul.links {
 
 .col-12 {
   width: 100%;
+}
+
+.box {
+  width: 50px;
+}
+
+.box-2 {
+  height: 600px;
 }/*# sourceMappingURL=style.css.map */
