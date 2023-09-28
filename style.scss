@@ -8,6 +8,9 @@
 @use "./sass/variables/media" as *;
 // import mixins
 @use "./sass/helpers/mixins" as *;
+// import centering
+@use "./sass/helpers/centering" as *;
+
 
 // Global Variable
 $alt_color: green;
@@ -273,3 +276,23 @@ ul.links {
 }
 
 // loop => for
+
+@for $i from 1 through 5 {
+  .class-#{$i} {
+    width: 100px + $i;
+  }
+}
+
+// more advanced example
+
+$dimentions: 0;
+@for $i from 1 through 5 {
+  .circle-#{$i + $dimentions} {
+    width:  $dimentions + 100;
+    height: $dimentions + 100;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.1 * $i);
+  }
+  $dimentions: $dimentions + 100;
+}
+
